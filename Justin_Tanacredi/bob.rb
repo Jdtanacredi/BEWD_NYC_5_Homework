@@ -1,51 +1,52 @@
-require_relative 'response_types'
+# require_relative 'response_types'
 
 # SOLUTION #1
 
-# class Bob
-# def hey message
+class Bob
+def hey message
   
-#   if message.length <= 5 || message.empty?
-#     "Fine. Be that way!"
-#   elsif message == message.upcase
-#     "Woah, chill out!"
-#   elsif message.end_with? "?"
-#     "Sure."
-#   elsif message.end_with? "!"
-#     'Whatever.'
-#   elsif message.include? "?"
-#     'Whatever.'        
-#   else
-#     "Whatever." 
-#   end  
-# end
-# end
+  if message.length <= 5 || message.empty?
+    "Fine. Be that way!"
+  elsif message == message.upcase && message =~ /[a-zA-Z]/
+    "Woah, chill out!"
+  elsif message.end_with? "?"
+    "Sure."
+  elsif message.end_with? "!"
+    'Whatever.'
+  elsif message.include? "?"
+    'Whatever.'        
+  else
+    "Whatever." 
+  end  
+end
+end
 
 
 #SOLUTION NUMBER 2
 # Module ResponseTypes in response_types.rb
 
-class Bob
-  include ResponseTypes
-  def hey message
-    respond (message)
-  end
+# class Bob
+#   include ResponseTypes
+#   def hey message
+#    respond (message)
+#   end
 
-  def respond teenager
-    response = ["Fine. Be that way!", "Woah, chill out!", "Sure.", "Whatever."]
-    if silent? (teenager)
-      response[0]
-    elsif yell? (teenager)
-      response[1]
-    elsif question? (teenager)
-      response[2]
-    elsif numbers? (teenager)
-      response[3]
-    else
-      response[3]
-    end
-  end
-end
+#   def respond teenager
+#     response = ["Fine. Be that way!", "Woah, chill out!", "Sure.", "Whatever."]
+#     if silent? (teenager)
+#       response[0]
+#     elsif yell? (teenager)
+#       response[1]
+#     elsif question? (teenager)
+#       response[2]
+#     elsif numbers? (teenager)
+#       response[3]
+#     else
+#       response[3]
+
+#     end
+#   end
+# end
 
 
 
@@ -65,3 +66,31 @@ end
 #     end
 #     end
 #   end
+
+#Same as #1, but started refactoring
+# class Bob
+# def hey message
+#   @message = message
+#   if message.strip.empty?
+#     "Fine. Be that way!"
+#   elsif screaming?
+#     "Woah, chill out!"
+#   elsif questioning?
+#     "Sure."
+#   elsif message.end_with? "!"
+#     'Whatever.'
+#   elsif message.include? "?"
+#     'Whatever.'        
+#   else
+#     "Whatever." 
+#   end  
+# end
+# end
+
+# def questioning?
+#   @message.end_with? '?'
+
+# def screaming?
+#   @message == @message.upcase && @message =~ /[a-zA-Z]/
+# end
+# end

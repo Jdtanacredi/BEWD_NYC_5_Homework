@@ -92,12 +92,12 @@ no})
 
 
   it "responds to only numbers" do
-    skip
+  
     assert_equal 'Whatever.', teenager.hey('1, 2, 3')
   end
 
   it "responds to questions with only numbers" do
-    skip
+
     assert_equal 'Sure.', teenager.hey('4?')
   end
 end
