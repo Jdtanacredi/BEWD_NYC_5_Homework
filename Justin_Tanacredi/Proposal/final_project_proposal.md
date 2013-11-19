@@ -11,7 +11,7 @@ I have already built part of this app and have a rough idea of my db schema, but
 
 **Possible Dificulties**        
 
-* The hardest part of completing this project will be finding a payment system that handles information similar to Kickstarter.
+* Finding a payment system that handles information similar to Kickstarter. Receives payment information in the beginning, but does not charge until product ends.
 * Handling a database with multiple tables/columns
 
 
