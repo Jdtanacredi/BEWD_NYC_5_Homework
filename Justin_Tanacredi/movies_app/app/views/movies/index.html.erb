@@ -1,0 +1,19 @@
+<h1>Welcome to RetFlix! See our collection of movies below</h1>
+
+<%= form_tag '/search', method: :get do %>
+<%= label_tag 'q', "Search" %>
+<%= text_field_tag 'q' %>
+<%= submit_tag 'Search'%>
+<% end %>
+
+<%= link_to "Create a Movie", new_movie_path %>
+<p>Here's a lost of all the movies:</p>
+
+
+
+<table>
+<tr>
+  <th>Title</th>
+</tr>
+
+    <%= render 'movies' %>
