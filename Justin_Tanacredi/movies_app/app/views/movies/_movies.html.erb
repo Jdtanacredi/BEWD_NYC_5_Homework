@@ -1,5 +1,7 @@
 <% @movies.each do |movie| %>
     <tr>
       <td><%= movie.title %></td>
+      <td><%= movie.description %></td>
+      <td><%= link_to "Show Movie", movie%></td>
     </tr>
 <% end %>
