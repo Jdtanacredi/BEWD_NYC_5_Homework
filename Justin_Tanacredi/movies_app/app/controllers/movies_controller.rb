@@ -10,15 +10,14 @@ class MoviesController < ApplicationController
 
   def create
     ## This adds security!!!!!
-    @movie = Movie.create safe_movie
+    @movie = Movie.new safe_movie
 
     if @movie.save
+      flash[:notice] = "Movie saved successfully"
       redirect_to @movie
     else
       render 'new'
     end
-    #redirect_to movie
-
   end
 
   def show
@@ -39,6 +38,6 @@ class MoviesController < ApplicationController
   end
 
   def safe_movie
-    params.require(:movie).permit(:title, :description)
+    params.require(:movie).permit(:title, :description, :year_released, :rating)
   end
 end

@@ -1,5 +1,7 @@
 <%= form_for @movie do |f| %>
+
     <% if @movie.errors.any?  %>
+        <h2>There were errors saving your movie</h2>
         <div id="error_explanation">
           <%= @movie.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
@@ -12,6 +14,8 @@
         <%= f.text_field :description %>
     <%= f.label :year_released %>
         <%= f.text_field :year_released %>
+    <%= f.label :rating %>
+        <%= f.text_field :rating %>
     <%= f.submit %>
 
 <% end %>
