@@ -1,5 +1,5 @@
 MoviesApp::Application.routes.draw do
-
+  devise_for :users, path_names: { sign_in: 'login', sign_out: 'logout'}
   root "movies#index"
   resources :movies, only: [:index, :new, :create, :show, :edit, :update]
   get "search", to: "search#index"

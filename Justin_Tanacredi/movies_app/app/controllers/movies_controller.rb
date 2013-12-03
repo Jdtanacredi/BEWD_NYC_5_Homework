@@ -1,5 +1,7 @@
 class MoviesController < ApplicationController
   before_action :find_movie, only: [:edit, :update, :show]
+  before_action :authenticate_user!, only: [:new, :create]
+
   def index
     @movies = Movie.order(:title)
   end
