@@ -4,7 +4,7 @@
     <list default="true" id="b6afefd3-7760-49ba-a467-8990e4a335d4" name="Default" comment="" />
     <ignored path="movies_app.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/routes.rb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386036254317" ignored="false" />
+    <file path="/routes.rb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386038040191" ignored="false" />
     <file path="/index.html.erb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386028522476" ignored="false" />
     <file path="/movies.css.scss" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1384819145305" ignored="false" />
     <file path="/Dummy.txt" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386034632245" ignored="false" />
@@ -25,8 +25,12 @@
     <file path="$PROJECT_DIR$/../final_project/app/views/products/new.html.erb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1385572502457" ignored="false" />
     <file path="/20131126010423_add_rating_to_movies.rb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386028074896" ignored="false" />
     <file path="/application.html.erb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386036188511" ignored="false" />
-    <file path="/Gemfile" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386033856106" ignored="false" />
+    <file path="/Gemfile" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386037425102" ignored="false" />
     <file path="$USER_HOME$/work/depot/db/schema.rb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386034762670" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../ritly/Gemfile" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386037444174" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../ritly/app/views/layouts/application.html.erb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386037782970" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../ritly/config/routes.rb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386038040191" ignored="false" />
+    <file path="$PROJECT_DIR$/../../../ritly/app/controllers/shorts_controller.rb" changelist="b6afefd3-7760-49ba-a467-8990e4a335d4" time="1386038082803" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +50,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="movie.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="movie.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="3" selection-start="449" selection-end="449" vertical-scroll-proportion="0.28846154">
+            <state line="9" column="3" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="0" selection-start="920" selection-end="944" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,10 +86,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="14" selection-start="424" selection-end="424" vertical-scroll-proportion="-8.461538">
+            <state line="13" column="13" selection-start="271" selection-end="548" vertical-scroll-proportion="0.4347826">
               <folding />
             </state>
           </provider>
@@ -568,7 +581,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="774" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -675,13 +688,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="24" selection-start="807" selection-end="807" vertical-scroll-proportion="-0.43678162">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/movies/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="9" selection-start="547" selection-end="547" vertical-scroll-proportion="1.0">
@@ -731,13 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="14" selection-start="424" selection-end="424" vertical-scroll-proportion="-8.461538">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="14" selection-start="793" selection-end="793" vertical-scroll-proportion="0.0">
@@ -754,7 +753,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/movie.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="449" selection-end="449" vertical-scroll-proportion="0.28846154">
+        <state line="9" column="3" selection-start="449" selection-end="449" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="0" selection-start="920" selection-end="944" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="271" selection-end="548" vertical-scroll-proportion="0.4347826">
           <folding />
         </state>
       </provider>
