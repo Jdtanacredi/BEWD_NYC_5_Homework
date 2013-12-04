@@ -68,7 +68,7 @@
       <file leaf-file-name="product.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/product.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="24" selection-start="161" selection-end="161" vertical-scroll-proportion="0.24653313">
+            <state line="16" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.49306625">
               <folding />
             </state>
           </provider>
@@ -828,7 +828,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/product.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="24" selection-start="161" selection-end="161" vertical-scroll-proportion="0.24653313">
+        <state line="16" column="0" selection-start="259" selection-end="259" vertical-scroll-proportion="0.49306625">
           <folding />
         </state>
       </provider>
