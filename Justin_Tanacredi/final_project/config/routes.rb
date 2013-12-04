@@ -1,12 +1,13 @@
 FinalProject::Application.routes.draw do
-
+  root 'store#index'
   get "line_items/index"
   get "carts/index"
-  devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
   get "products/index"
 
- root 'store#index'
+  devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
+
   resources :products, only: [:index, :new, :create, :show, :edit, :update]
+  resources :line_items, only: [:index, :new]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
