@@ -1,5 +1,5 @@
 <div>
   <% @cart.line_items do |item| %>
-      <%= item.product.title %>
+      <%= item.quantity %> &times; <%= item.product.title %>
   <% end %>
 </div>
