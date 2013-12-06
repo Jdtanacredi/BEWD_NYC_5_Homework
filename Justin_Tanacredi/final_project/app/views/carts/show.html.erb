@@ -1,0 +1,5 @@
+<div>
+  <% @cart.line_items do |item| %>
+      <%= item.product.title %>
+  <% end %>
+</div>
