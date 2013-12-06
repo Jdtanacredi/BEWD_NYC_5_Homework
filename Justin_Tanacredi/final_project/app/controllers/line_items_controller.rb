@@ -5,7 +5,7 @@ class LineItemsController < ApplicationController
   def create
     @cart = current_cart
     product = Product.find params[product_id]
-    @line_item = @cart.line_items.build
+    @line_item = @cart.add_product product_id
     @line_item.product = product
   end
 end
