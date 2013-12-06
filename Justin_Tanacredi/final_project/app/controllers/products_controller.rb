@@ -1,6 +1,6 @@
 class ProductsController < ApplicationController
   before_action :find_product, only: [:edit, :show, :update]
-  before_action :if_admin?, only: [:edit, :show, :update, :create, :destroy]
+  #before_action :if_admin?, only: [:edit, :show, :update, :create, :destroy]
 
   def index
     @products = Product.all
@@ -31,13 +31,6 @@ class ProductsController < ApplicationController
     @product.destroy
   end
 
-  def is_admin?
-    if current_user.admin?
-      true
-    else
-    end
-  end
-
   private
 
   def safe_product
@@ -47,5 +40,12 @@ class ProductsController < ApplicationController
   def find_product
     @product = Product.find params[:id]
   end
+
+  #def is_admin?
+  #  if current_user.admin?
+  #    true
+  #  else
+  #  end
+  #end
 
 end

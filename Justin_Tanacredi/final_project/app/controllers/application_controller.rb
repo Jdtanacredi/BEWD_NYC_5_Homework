@@ -3,6 +3,14 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
 
+class Admin::ApplicationController < ApplicationController
+  before_filter :check_authorized
+
+  def check_authorized
+    redirect_to root_path unless can? :admin, :all
+  end
+end
+
   private
 
   def current_cart
