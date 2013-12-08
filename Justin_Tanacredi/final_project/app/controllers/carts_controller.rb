@@ -2,7 +2,7 @@ class CartsController < ApplicationController
   before_action :find_cart, only: [:edit, :show, :update, :destroy]
 
   def index
-    @cart = Cart.all
+    @carts = Cart.all
   end
 
   def show
@@ -20,7 +20,7 @@ class CartsController < ApplicationController
   def create
     @cart = Cart.new(params[:id])
 
-    if cart.save
+    if @cart.save
       redirect_to @cart
     else
       render action: 'new'

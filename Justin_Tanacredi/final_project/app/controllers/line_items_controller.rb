@@ -18,11 +18,10 @@ class LineItemsController < ApplicationController
     @line_item.product = product
 
       if @line_item.save
-        redirect_to @line_item.cart
+        redirect_to cart_path(@line_item.cart)
       else
         render action: 'new'
       end
-
   end
 
   def edit

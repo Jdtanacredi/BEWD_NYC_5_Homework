@@ -1,5 +1,7 @@
+
+<h2>Your Cart!</h2>
 <div>
-  <% @cart.line_items do |item| %>
-      <%= item.quantity %> &times; <%= item.product.title %>
+  <% @cart.line_items.each do |item| %>
+    <p><%= item.quantity %> &times; <%= item.product.title %></p>
   <% end %>
 </div>
