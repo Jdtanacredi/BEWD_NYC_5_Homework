@@ -1,6 +1,6 @@
 class ProductsController < AdminsController
   before_action :find_product, only: [:edit, :show, :update]
-  #before_action :is_admin?, only: [:edit, :show, :update, :create, :destroy]
+
 
   def index
     @products = Product.all
